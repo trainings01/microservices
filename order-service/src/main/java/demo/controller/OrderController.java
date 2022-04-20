@@ -20,6 +20,7 @@ public class OrderController
 	@PostMapping("/bookOrder")
 	public TransactionResponse bookOrder(@RequestBody TransactionRequest request)
 	{
+		System.out.println("bookorder");
 		return service.saveOrder(request);
 	}
 }
