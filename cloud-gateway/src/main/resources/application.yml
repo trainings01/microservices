@@ -9,6 +9,10 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/order/**
+        - id: cancelorder-service
+          uri: lb://CANCELORDER-SERVICE
+          predicates:
+            - Path=/cancelOrder
         - id: payment-service
           uri: lb://PAYMENT-SERVICE
           predicates:
